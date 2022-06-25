@@ -1,0 +1,31 @@
+.categories{
+    button{
+        background-color: var(--white);
+        border: 1px solid var(--gray-300);
+        border-radius: 8px;
+        width: 145px;
+        height: 42px;
+        color: var(--gray-300);
+        
+        &:hover{
+            filter: brightness(0.95);
+        }
+
+        text-transform: capitalize;
+
+        &.active{
+            background-color: var(--yellow-500);
+            color: var(--gray-500);
+            font-weight: 500;
+        }
+    }
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+
+    @media (max-width: 768px){
+        justify-content: space-between;
+        gap: 0.5rem 0;
+    }
+}

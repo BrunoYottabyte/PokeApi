@@ -1,0 +1,50 @@
+.container{
+
+    .content{
+        width: 60vw;
+        margin: 0 auto;
+        height: 54px;
+        background-color: var(--white);
+        position: relative;
+
+        margin-top: 5vh;
+        border-radius: 8px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid var(--gray-200);
+        
+        
+        input{
+            width: 90%;
+            height: 100%;
+            margin: 0 1rem;
+            border: none;
+            outline: none;
+            font-size: 14px;
+        }
+
+        a{
+            cursor: pointer;
+            height: 100%;
+            line-height: 55px;
+            width: 5%;
+        
+        }
+
+        span{
+            position: absolute;
+            right: 0;
+            bottom: -25px;
+            color: var(--gray-300);
+        }
+
+    }
+
+    @media(max-width: 720px){
+        .content{
+            width: 80vw;
+        }
+    }
+}

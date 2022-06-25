@@ -1,0 +1,91 @@
+.container{
+    width: 100vw;
+    height: 10vh;
+    background-color: var(--yellow-500);
+
+    .content{
+        max-width: 1120px;
+        padding: 0 2rem;
+        margin: 0 auto;
+        position: relative;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img{
+            position: absolute;
+            left: 0;
+            padding: 0 2rem;
+            cursor: pointer;
+        }
+
+        nav {
+            display: flex;
+            
+            a{
+                line-height: 10vh;
+                height: 10vh;
+                position: relative;
+                cursor: pointer;
+                font-size: 14px;
+
+                .total_favorite{
+                    background-color: var(--gray-500);
+                    height: 17px;
+                    width: 17px;
+                    border-radius: 50%;
+                    font-size: 10px;
+                    color: var(--white);
+                    
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    position: absolute;
+                    right: 0.3rem;
+                    top: 50%;
+                    transform: translateY(-50%);
+                 }
+                 
+                &.active::after{
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 2px;
+                    background-color: var(--gray-500);
+                }
+            }
+
+            a{
+                padding: 0 1.5rem;
+            }
+
+            a + a {
+                margin-left: 1rem;
+            }
+        }
+    }
+
+    @media(max-width: 500px){
+        .content{
+            img{
+                width: 115px;
+            }
+
+            justify-content: flex-end;
+            nav{
+                a{
+                    padding: 0 1rem;
+                    font-size: 12.5px;
+                }
+
+                a + a {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}

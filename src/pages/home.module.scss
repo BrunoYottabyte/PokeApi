@@ -1,0 +1,63 @@
+.container{
+    width: 100vw;
+    height: calc(100vh - 10vh);
+
+    .content{
+        max-width: 1120px;
+        height: 100%;
+        margin: 0 auto;
+        padding: 0 2rem;
+
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+
+        color: var(--gray-300);
+
+        .group_text{
+            h1 {
+                font-size: 24px;
+                color: var(--gray-500);
+                margin-bottom: 0.5rem;
+            }
+    
+            p {
+                font-size: 14px;
+            }
+        }
+        
+
+        > button{
+            background-color: transparent;
+            border-radius: 8px;
+            border: 1px solid var(--gray-300);
+            width: 233px;
+            height: 45px;
+            color: inherit;
+        }
+
+
+        
+    }
+
+    .save_storage{
+        
+        .content{
+            max-width: 1120px;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding-top: 5vh;
+            
+            >div{
+                display: flex;
+                gap: 2rem;
+            }
+        }
+
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,30 @@
+.container{
+    width: 100vw;
+    padding: 5vh 0;
+}
+.content{
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    .save_storage{
+        .all_pokemons{
+                width: 100%;
+                display: flex;
+                gap: 2rem 2.5rem;
+                flex-wrap: wrap;
+
+                @media screen and (max-width: 768px){
+                    gap: 2rem 0.5rem;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                }
+        }
+
+       
+    }
+    
+}
