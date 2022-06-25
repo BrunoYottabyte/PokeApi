@@ -185,11 +185,16 @@
         color: var(--gray-250);
         margin: 10px 0;
        }
-
+       
        .features{
             display: flex;
             flex-direction: column;
             gap: 10px;
+            .not_found{
+                font-size: 1rem;
+                text-align: center;
+                margin: 1rem 0;
+            }
            .group_features{
                 display: flex;
                 justify-content: space-between;
