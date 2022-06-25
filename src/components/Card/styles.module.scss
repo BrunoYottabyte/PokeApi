@@ -104,11 +104,16 @@
 
     @media screen and (max-width: 380px){
         width: 125px;
+
+       .content{
+        .ability  {
+            a{
+                width: 45px;
+            }
+        }
+       }
     }
 
-    @media screen and (max-width: 360px){
-        width: 115px;
-    }
 }
 
 
