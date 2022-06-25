@@ -1,34 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Desafio para vaga de estágio como Front-end 🥇 🎉
 
-## Getting Started
-
-First, run the development server:
-
+### Consumindo dados da PokéApi 🚧
 ```bash
-npm run dev
-# or
-yarn dev
+https://pokeapi.co/
+```
+### Figma do desafio 🎨
+```
+https://www.figma.com/file/zxpw3KQFMru4ls20U3fj23/Teste-PokeApi?node-id=2%3A1348
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Telas da aplicação 📺
+#### A aplicação encontra-se hospedada na vercel
+```
+https://poke-api-gamma.vercel.app/
+```
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+#### Listando todos os pokémons
+https://user-images.githubusercontent.com/70710358/175785301-cb4e461d-b13d-4a7d-9595-366f8b05c07c.mp4
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+#### Realizando busca na api
+https://user-images.githubusercontent.com/70710358/175785344-8d38d232-ea4c-45f5-a800-f9b3fb97b63c.mp4
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+#### Listando por categorias
+https://user-images.githubusercontent.com/70710358/175785368-7d58fa46-6cf6-4937-ac33-fee91c3eeafd.mp4
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+ ### Tecnologias utilizadas
+  <div style="display: inline_block"><br>
+    <img align="center" alt="Bruno-Ts" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg">
+    <img align="center" alt="Bruno-SASS" height="50" width="60"  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg">
+    <img align="center" alt="Bruno-NEXT" height="50" width="60"  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg">
+    <img align="center" alt="Bruno-HTML" height="50" width="60"  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+  </div>
