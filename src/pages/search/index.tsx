@@ -5,36 +5,21 @@ import { Header } from "../../components/Header";
 import { SearchBox } from '../../components/SearchBox';
 import { useFavorite } from '../../hooks/useFavorite';
 import { api } from '../../services/api';
+import { PokemonProps } from '../../services/types';
 import styles from './styles.module.scss';
-
-type ResponseApiPokemon = {
-    results: any;
-
-    id: number,
-    name: string;
-    sprites?: {
-        front_default: string;
-        back_default: string;
-    }
-    types: [{
-        type?: {
-            name: string;
-        }
-    }]
-}
 
 export default function Search(){
     const [name, setName] = useState('');
-    const [pokemon, setPokemon] = useState<ResponseApiPokemon>({} as ResponseApiPokemon);
+    const [pokemon, setPokemon] = useState<PokemonProps>({} as PokemonProps);
     const {storage} = useFavorite()
     useEffect(() => {
             const searchPokemon = async() => {
                 try{
-                    const {data} = await api.get<ResponseApiPokemon>(`https://pokeapi.co/api/v2/pokemon/${name}`);
-                    console.log(data)
+                    const {data} = await api.get<PokemonProps>(`https://pokeapi.co/api/v2/pokemon/${name}`);
+                  
                     setPokemon(data)
                 }catch(err){
-                    setPokemon({} as ResponseApiPokemon);
+                    setPokemon({} as PokemonProps);
                 }
             }
             searchPokemon()

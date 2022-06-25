@@ -16,7 +16,7 @@ export default function All(){
 
 
     useEffect(() => {
-        const types_allowed = ["water", "fire", "electric"];
+        const types_allowed = ["water", "fire", "electric", "flying", "ice","psychic", "rock", "fighting"];
         
         fetchData().then(response => {
               const dataFilter = response.filter(pokemon => {
@@ -53,7 +53,7 @@ export default function All(){
                             
                                 {
                                 arr.map(pokemon => {
-                                  
+                                   
                                     return(
                                         <Card key={pokemon?.id} pokemon={pokemon} />
                                     )

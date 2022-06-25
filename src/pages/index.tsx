@@ -37,7 +37,7 @@ export default function Home() {
                   <div>
                     {
                    storage?.length > 0 && storage?.map(pokemon => (
-                        <Card pokemon={pokemon}/>
+                        <Card pokemon={pokemon} key={pokemon.id}/>
                       ))
                     }
                   </div>

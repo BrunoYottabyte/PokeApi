@@ -41,6 +41,11 @@ export function Ability({name}: AbilityProps){
             bg: "var(--gray-400)" ,
             color: "var(--white)"
         },
+        fighting: {
+            bg: "var(--gray-400)" ,
+            color: "var(--white)"
+        },
+        
         
     }
 

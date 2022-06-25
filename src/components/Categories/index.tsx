@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 
 
 const categories = [
-    "todos", "fire", "electric", "water", 'flying', "ice", "rock", "psychic"
+    "todos", "fire", "electric", "water", 'flying', "ice", "rock", "psychic", "fighting"
 ]
 
 interface CategoriesProps {
