@@ -17,11 +17,11 @@ export function SearchBox({handlePokemon, feedback}: SearchBoxProps){
                 <input placeholder="Procure por pokémons"
                     type="text"
                     value={valueInput}
-                    onChange={(e) => setValueInput(e.target.value.toLocaleLowerCase())}
+                    onChange={(e) => setValueInput(e.target.value)}
                 />
                 <a
                     onClick={() =>{ 
-                        handlePokemon(valueInput)
+                        handlePokemon(valueInput.toLowerCase());
                         setSearch(!search);
                     }}
                 >
