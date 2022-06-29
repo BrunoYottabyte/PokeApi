@@ -16,7 +16,7 @@ export function SearchBox({handlePokemon, feedback}: SearchBoxProps){
             <div className={styles.content}>
                 <input placeholder="Procure por pokémons"
                     value={valueInput}
-                    onChange={(e) => setValueInput(e.target.value.toLocaleLowerCase())}
+                    onChange={(e) => setValueInput(e.target.value)}
                 />
                 <a
                     onClick={() =>{ 
